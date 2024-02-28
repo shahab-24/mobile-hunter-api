@@ -9,18 +9,29 @@
 </head>
 <body>
   <header>
-    <h1>Mobile Hunting</h1>
+    <h1 class="text-7xl font-bold text-slate-800">Mobile Hunting</h1>
 
   </header>
   <main class="container mx-auto">
-    <div>
+    <div class="w-full bg-gray-300">
       <input id="search-button" type="text" placeholder="Search...." class="input input-bordered w-full max-w-xs" />
-      <button onclick="clickHandlers()" class="btn btn-secondary">Search</button>
+      <button onclick="clickHandlers()" class="btn btn-accent px-6">Search</button>
     </div>
-    <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div id="loading-spin" class=" text-center my-40 hidden">
+      <span class="loading loading-spinner text-blue-800 loading-lg"></span>
+    </div>
+   
+      <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       
+      </div>
 
+    </section>
+    
+    <!-- show all button -->
+    <div id="show-all-button" class="hidden text-center py-8">
+      <button onclick="showAll()" class="btn btn-accent px-6">Show more...</button>
     </div>
+   </section>
 
   </main>
   <footer>
